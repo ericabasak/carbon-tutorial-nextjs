@@ -66,7 +66,7 @@ const getRowItems = (rows) =>
     links: <LinkList url={row.html_url} homepageUrl={row.homepage} />,
   }));
 
-function RepoPage() {
+const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
   const [loading, setLoading] = useState(true);
@@ -135,6 +135,6 @@ function RepoPage() {
       </Column>
     </Grid>
   );
-}
+};
 
 export default RepoPage;

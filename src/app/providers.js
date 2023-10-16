@@ -4,7 +4,7 @@ import { Content, Theme } from '@carbon/react';
 
 import TutorialHeader from '@/components/TutorialHeader/TutorialHeader';
 
-export function Providers({ children }) {
+const Providers = ({ children }) => {
   return (
     <div>
       <Theme theme="g100">
@@ -13,4 +13,6 @@ export function Providers({ children }) {
       <Content>{children}</Content>
     </div>
   );
-}
+};
+
+export default Providers;
